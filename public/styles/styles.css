@@ -13,7 +13,7 @@ html {
 body {
     background: #2B292E;
   color: #fafafa;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -22,7 +22,7 @@ button {
 }
 
 a {
-    color: #6F439C;
+    color: #607D8B;
 }
 
 /* Container */
@@ -36,9 +36,9 @@ a {
 /* Header */
 
 .header {
-  background: #6F439C;
+  background: #607D8B;
   color:white;
-  padding: 1.6rem 0;
+  padding: 1rem 0;
 }
 
 .header__title {
@@ -56,31 +56,29 @@ a {
 
 .actions {
     background-color: #353239;
-    /* border-bottom: 1px solid #dedfe0; */
-    /* color: #333333; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem
 }
 
 .actions__container {
     align-items: center;
     display: flex;
+    justify-content: center;
     max-width: 60rem;
     margin: 0 auto;
     min-height: 3rem;
     padding: 0 1.6rem;
 }
 
-.actions__container--spaced {
-    justify-content: space-between
-}
-
 /* Form Inputs */
 
 .input {
     border: none;
+    border-radius: 4px;
     font-size: 1.4rem;
     font-weight: 300;
-    height: 3rem;
+    height: 4rem;
+    width: 20rem;
     margin-right: 1.6rem;
     padding: .4rem .8rem;
 }
@@ -95,18 +93,21 @@ a {
 }
 
 .button {
-    background: #7044a0;
+    background: #607D8B;
     border: none;
-    border-bottom: 2px solid #603a88;
+    border-radius: 4px;
     color: white;
     font-size: 1.4rem;
+    height: 4rem;
+    width: 10rem;
     font-weight: 300;
     padding: .8rem;
     transition: background .3s ease, color .3s ease;
 }
 
 .button:hover {
-    background: #5F3A87;
+    background: #546E7A;
+
 }
 
 .button--secondary {
@@ -127,7 +128,6 @@ a {
 .button--text:hover {
     background: none;
     color: white;
-    text-decoration: underline;
 }
 
 /* Note editor */
@@ -204,4 +204,10 @@ a {
 
 .empty-message {
     margin: 3.2rem 0;
+}
+
+.add-todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

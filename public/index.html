@@ -3,20 +3,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width initial-scale=1">
-        <title>My Todos</title>
+        <title>Todoit</title>
         <link href="/images/favicon.png?v=1" rel="icon">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
         <link href="/styles/styles.css" rel="stylesheet">
     </head>       
     <body>
         <div class="header">
             <div class="container">
-                <h1 class="header__title">Todos</h1>
-                <h2 class="header__subtitle">What do you need to do?</h2>
+                <img src="./images/todoit_header-logo.png" alt="" style="width: 225px;">
             </div>
         </div>
         <div class="actions">
             <div class="actions__container">
-                <input id="search-text" class="input" type="text" placeholder="Filter todos">
+                <input id="search-text" class="input" type="text" placeholder="Filter Todos">
                 <label class="checkbox">
                     <input id="hide-completed" type="checkbox"> Hide Completed 
                 </label>       
@@ -24,8 +24,8 @@
         </div>
         <div class="container">
             <div id="todos"></div>
-            <form id="add-todo-form">
-                <input type="text" class="input" placeholder="Todo Text" name="todoInput">
+            <form id="add-todo-form" class="add-todo-form">
+                <input type="text" class="input" placeholder="What I need to do..." name="todoInput">
                 <button class="button">Add Todo</button>
             </form>
         </div>
